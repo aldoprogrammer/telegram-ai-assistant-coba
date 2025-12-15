@@ -29,9 +29,11 @@ export default async function handler(
 
   const telegram = createTelegramClient();
 
-  const reply = await generateReply({
-    userText: text,
-  });
+const reply = await generateReply({
+  userText: text,
+  context: [],
+});
+
 
   await telegram.sendMessage({
     chatId,
