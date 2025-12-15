@@ -2,9 +2,9 @@ import type { IncomingMessage, ServerResponse } from "node:http";
 
 import Fastify, { type FastifyReply, type FastifyRequest } from "fastify";
 
-import { getCachedTurns, rememberAssistant, rememberIncoming } from "../src/chatContext.js";
-import { generateReply } from "../src/openai.js";
-import { createTelegramClient, type TelegramMessage, type TelegramUpdate } from "../src/telegram.js";
+import { getCachedTurns, rememberAssistant, rememberIncoming } from "../src/chatContext";
+import { generateReply } from "../src/openai";
+import { createTelegramClient, type TelegramMessage, type TelegramUpdate } from "../src/telegram";
 
 function optionalEnv(name: string): string | undefined {
   const value = process.env[name];
@@ -106,4 +106,3 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
   await app.ready();
   app.server.emit("request", req, res);
 }
-

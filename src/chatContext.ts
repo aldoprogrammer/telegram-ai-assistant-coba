@@ -1,4 +1,4 @@
-import type { TelegramMessage, TelegramUpdate } from "./telegram.js";
+import type { TelegramMessage, TelegramUpdate } from "./telegram";
 
 export type ChatTurn =
   | { role: "user"; text: string }

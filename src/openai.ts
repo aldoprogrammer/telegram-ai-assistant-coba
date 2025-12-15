@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 
-import type { ChatTurn } from "./chatContext.js";
+import type { ChatTurn } from "./chatContext";
 
 function requireEnv(name: string): string {
   const value = process.env[name];
