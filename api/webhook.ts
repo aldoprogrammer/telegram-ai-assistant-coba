@@ -6,9 +6,11 @@ export default async function handler(
   req: VercelRequest,
   res: VercelResponse
 ) {
+    console.log("WEBHOOK HIT");
   if (req.method !== 'POST') {
     return res.status(200).send('OK');
   }
+    console.log("BODY:", req.body);
 
   const secret = process.env.TELEGRAM_WEBHOOK_SECRET;
   if (secret) {
