@@ -21,6 +21,7 @@ Your webhook URL will be `http://localhost:3000/api/webhook`.
 
 1. Push to a Git repo
 2. Import into Vercel
+3. In Vercel Project Settings → General → Node.js Version, select `22.x`
 3. Set env vars in Vercel project settings
 4. Deploy
 
@@ -46,4 +47,3 @@ If you don’t use a secret, omit `secret_token`.
 3. Send a message to your bot in Telegram
 4. Confirm you get a reply in Telegram
 5. Send a photo with a caption; confirm you get a reply that considers the image
-

@@ -2,6 +2,9 @@
   "name": "telegram-ai-assistant",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vercel dev",
     "typecheck": "tsc -p tsconfig.json --noEmit",
