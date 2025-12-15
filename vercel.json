@@ -1,5 +1,7 @@
 {
-  "engines": {
-    "node": ">=18"
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs20.x"
+    }
   }
 }
